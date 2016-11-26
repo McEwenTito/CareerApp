@@ -1,0 +1,23 @@
+.btn-xl{
+  padding: 28px 38px;
+  font-size: 30px;
+  -webkit-border-radius: 8px;
+  -moz-boreder-radius: 8px;
+  border-radius: 8px;
+}
+
+.twenty{
+  font-size: 20px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.larger{
+  font-size: 38px;
+}
+.center{
+  text-align: center;
+
+}

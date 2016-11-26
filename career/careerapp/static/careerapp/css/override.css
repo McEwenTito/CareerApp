@@ -1,0 +1,8 @@
+.freetext{
+  color: black;
+}
+
+.freetext:hover, .freetext:active{
+  color: blue;
+  text-decoration: none;
+}
