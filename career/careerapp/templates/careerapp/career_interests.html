@@ -1,0 +1,95 @@
+{% extends 'careerapp/base.html' %}
+
+{% block title%}
+<title>Career Interests</title>
+{% endblock %}
+
+{% block stuff %}
+<div class="container-fluid">
+  <h1 class="larger center">Check the activities that interest you most</h1>
+  <h1 class="center"> Read through the entire list to obtain accurate results</h1>
+</div>
+<br><br>
+<form	method="POST"	class="post-form">
+  {%	csrf_token	%}
+    <div class="container-fluid twenty">
+      <div class="row">
+          <div class="col-md-4">
+            {{ form.cluster1 }}
+          </div>
+          <div class="col-md-4">
+            {{ form.cluster2 }}
+          </div>
+          <div class="col-sm-4">
+            {{ form.cluster3 }}
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+              {{ form.cluster4 }}
+            </div>
+            <div class="col-md-4">
+              {{ form.cluster5 }}
+            </div>
+            <div class="col-sm-4">
+              {{ form.cluster6 }}
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+              <div class="col-md-4">
+                {{ form.cluster7 }}
+              </div>
+              <div class="col-md-4">
+                {{ form.cluster8 }}
+              </div>
+              <div class="col-sm-4">
+                {{ form.cluster9 }}
+              </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4">
+                  {{ form.cluster10 }}
+                </div>
+                <div class="col-md-4">
+                  {{ form.cluster11 }}
+                </div>
+                <div class="col-sm-4">
+                  {{ form.cluster12 }}
+                </div>
+              </div>
+              <br><br>
+              <div class="row">
+                  <div class="col-md-4">
+                    {{ form.cluster13 }}
+                  </div>
+                  <div class="col-md-4">
+                    {{ form.cluster14 }}
+                  </div>
+                  <div class="col-sm-4">
+                    {{ form.cluster15 }}
+                  </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-4">
+                      {{ form.cluster16 }}
+                    </div>
+                  </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-sm-4">
+            <button	type="submit"	class="btn	btn-default btn-xl">view careers</button>
+          </div>
+        </div>
+</form>
+{% endblock %}
