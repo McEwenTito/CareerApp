@@ -1,0 +1,36 @@
+{% extends 'careerapp/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}
+<title>Career Guidance System </title>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Main content
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="jumbotron">
+      <!--div class="backg"-->
+        <div class="container">
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row" bg-image=url()>
+        <div class="col-lg-6">
+          <p><a class="btn btn-default btn-xl" href="/grades/" role="button">Academic Assessment</a></p>
+          <p>list down your strong MSCE subjects and view what programmes you may enroll for.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-6">
+          <p><a class="btn btn-default btn-xl" href="/interests/" role="button">Interests Assessment</a></p>
+          <p>Choose activities that interest you and find out what careers you would be good in.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}

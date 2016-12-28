@@ -1,0 +1,181 @@
+{% extends 'careerapp/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+<title>careers</title>
+{% endblock %}
+
+
+{% block content %}
+<!--div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"-->
+          <div class="page-header" style="text-align:center"><h2>Career clusters</h2><h4>Click to view career pathways.</h4></div>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".agri">Agriculture, Food & Natural Resources</a>
+              <div class="collapse ccd agri">
+                <p>Agribusiness Systems
+                </p><p> Animal Systems
+                </p><p> Environmental Service Systems
+                </p><p> Food Products & Processing Systems
+                </p><p> Natural Resources Systems
+                </p><p> Plant System
+                </p><p> Power, Structural & Technical Systems
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".arch">Architecture & Construction</a>
+              <div class="collapse ccd arch">
+                <p> Construction
+                </p><p> Design/Pre-Construction
+                </p><p> Maintenance/Operations
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".av">Arts, A/V Technology & Communication</a>
+              <div class="collapse ccd av">
+                <p>A/V Technology & Film
+                </p><p> Journalism & Broadcasting
+                </p><p> Performing Arts
+                </p><p> Printing Technology
+                </p><p> Telecommunications
+                </p><p> Visual Arts</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".bus">Business Management & Administration</a>
+              <div class="collapse ccd bus">
+                <p>Administrative Support
+                </p><p> Business Information Management
+                </p><p> General Management
+                </p><p> Human Resources Management
+                </p><p> Operations Management</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".edu">Education and Training</a>
+              <div class="collapse ccd edu">
+                <p>Administration & Administrative Support
+                </p><p> Professional Support Services
+                </p><p> Teaching/Training</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".fin">Finance</a>
+              <div class="collapse ccd fin">
+                <p> Accounting
+                </p><p> Banking Services
+                </p><p> Business Finance
+                </p><p> Insurance
+                </p><p> Securities & Investments</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".gov">Government & Public Administration</a>
+              <div class="collapse ccd gov">
+                <p>Foreign Service
+                </p><p> Governance
+                </p><p> National Security
+                </p><p>Planning
+                </p><p>Public Management & Administration
+                </p><p>Regulation
+                </p><p>Revenue & Taxation</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".heal">Health Sciences</a>
+              <div class="collapse ccd heal">
+                <p>Biotechnology Research & Development
+                </p><p> Diagnostic Services
+                </p><p> Health Informatics
+                </p><p> Support Services
+                </p><p> Therapeutic Services</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".hosp">Hospitality & Tourism</a>
+              <div class="collapse ccd hosp">
+                <p>Lodging
+                </p><p> Recreation, Amusements & Attractions
+                </p><p> Restaurants & Food/Beverage Services
+                </p><p> Travel & Tourism</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".hum">Human Services</a>
+              <div class="collapse ccd hum">
+                <p>Consumer Services
+                </p><p> Counseling & Mental Health Services
+                </p><p> Early Childhood Development & Services
+                </p><p> Family & Community Services
+                </p><p> Personal Care Services</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".it">Information Technology</a>
+              <div class="collapse ccd it">
+                <p>Information Support & Services
+                </p><p> Network Systems
+                </p><p> Programming & Software Development
+                </p><p> Web & Digital Communications</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".law">Law, Public Safety, Corrections & Security</a>
+              <div class="collapse ccd law">
+                <p>Correction Services
+                </p><p> Emergency & Fire Management Services
+                </p><p> Law Enforcement Services
+                </p><p> Legal Services
+                </p><p> Security & Protective Services</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".man">Manufacturing</a>
+              <div class="collapse ccd man">
+                <p>Correction Services
+                </p><p> Emergency & Fire Management Services
+                </p><p> Law Enforcement Services
+                </p><p> Legal Services
+                </p><p> Security & Protective Services</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".mark">Marketing</a>
+              <div class="collapse ccd mark">
+                <p>Marketing Communications
+                </p><p> Marketing Management
+                </p><p> Marketing Research
+                </p><p> Merchandising
+                </p><p> Professional Sales</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".sci">Science & Technology</a>
+              <div class="collapse ccd sci">
+                </p><p> Engineering & Technology
+                </p><p> Science & Mathematics</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 placeholder">
+              <a class="btn btn-default btn-lg" style="display: block; width: 100%;" data-toggle="collapse" data-target=".trans">Transportation, Distribution & Logistics</a>
+              <div class="collapse ccd trans">
+                  <p> Facility & Mobile Equipment Maintenance
+                  </p><p> Health, Safety & Environmental
+                  Management
+                  </p><p> Logistics Planning & Management Services
+                  </p><p> Sales & Service
+                  </p><p> Transportation Operations
+                  </p><p> Transportation Systems/Infrastructure
+                  Planning, Management & Regulation
+                  </p><p> Warehousing & Distribution Center
+                  Operations
+                </div>
+            </div>
+
+          </div>
+
+          {% endblock %}
+          <script src="{% static 'careerapp/js/bootstrap.min.js' %}"></script>

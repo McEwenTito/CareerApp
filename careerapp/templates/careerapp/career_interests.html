@@ -1,0 +1,111 @@
+{% extends 'careerapp/base.html' %}
+
+{% block title%}
+<title>Career Interests</title>
+{% endblock %}
+
+{% block stuff %}
+<div class="container-fluid">
+  <h1 class="larger center">Check the activities that interest you most</h1>
+  <h1 class="center"> Read through the entire list to obtain accurate results</h1>
+</div>
+<br><br>
+<form	method="POST"	class="post-form">
+  {%	csrf_token	%}
+    <div class="container-fluid twenty">
+      <div class="row">
+          <div class="col-md-4">
+            <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+            <div class="c1 collapse">{{ form.cluster1 }}</div>
+          </div>
+          <div id="2" class="col-md-4">
+            <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+            {{ form.cluster2 }}
+          </div>
+          <div id="3" class="col-sm-4">
+            <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+            {{ form.cluster3 }}
+          </div>
+        </div>
+        <br><br>
+        <div id="4" class="row">
+            <div class="col-md-4">
+              <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+              {{ form.cluster4 }}
+            </div>
+            <div id="5" class="col-md-4">
+              <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+              {{ form.cluster5 }}
+            </div>
+            <div id="6" class="col-sm-4">
+              <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+              {{ form.cluster6 }}
+            </div>
+          </div>
+          <br><br>
+          <div id="7" class="row">
+              <div class="col-md-4">
+                <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                {{ form.cluster7 }}
+              </div>
+              <div id="8" class="col-md-4">
+                <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                {{ form.cluster8 }}
+              </div>
+              <div id="9" class="col-sm-4">
+                <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                {{ form.cluster9 }}
+              </div>
+            </div>
+            <br><br>
+            <div id="10" class="row">
+                <div class="col-md-4">
+                  <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                  {{ form.cluster10 }}
+                </div>
+                <div id="11" class="col-md-4">
+                  <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                  {{ form.cluster11 }}
+                </div>
+                <div id="12" class="col-sm-4">
+                  <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                  {{ form.cluster12 }}
+                </div>
+              </div>
+              <br><br>
+              <div class="row">
+                  <div id="13" class="col-md-4">
+                    <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                    {{ form.cluster13 }}
+                  </div>
+                  <div id="14" class="col-md-4">
+                    <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                    {{ form.cluster14 }}
+                  </div>
+                  <div id="15" class="col-sm-4">
+                    <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                    {{ form.cluster15 }}
+                  </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div id="16" class="col-md-4">
+                      <button	type="button" class="btn btn-default btn-lg" data-toggle="collapse" id="c1" data-target=".c1">Text</button>
+                      {{ form.cluster16 }}
+                    </div>
+                  </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-sm-4">
+            <button	type="submit"	class="btn	btn-default btn-xl">view careers</button>
+          </div>
+        </div>
+</form>
+{% endblock %}
